@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a8b1f4e-0664-462e-b5d3-ccd86905c8e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_app/components/modules/monitoring/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_app/components/modules/monitoring/listView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_app/components/infrastructure/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/infrastructure/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_app/components/row.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_app/out/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/out/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Site.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_server/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev_server/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,7 +61,7 @@
           <entry key="css" value="9" />
           <entry key="html" value="252" />
           <entry key="ignore" value="17" />
-          <entry key="js" value="8162" />
+          <entry key="js" value="8247" />
           <entry key="json" value="164" />
           <entry key="txt" value="886" />
         </counts>
@@ -85,7 +71,7 @@
           <entry key="CSS" value="9" />
           <entry key="HTML" value="252" />
           <entry key="JSON" value="281" />
-          <entry key="JavaScript" value="8162" />
+          <entry key="JavaScript" value="8247" />
           <entry key="PLAIN_TEXT" value="903" />
         </counts>
       </usages-collector>
@@ -93,9 +79,9 @@
         <counts>
           <entry key="babelrc" value="1" />
           <entry key="css" value="4" />
-          <entry key="html" value="9" />
+          <entry key="html" value="10" />
           <entry key="ignore" value="1" />
-          <entry key="js" value="25" />
+          <entry key="js" value="26" />
           <entry key="json" value="6" />
           <entry key="md" value="1" />
           <entry key="txt" value="1" />
@@ -104,9 +90,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="9" />
+          <entry key="HTML" value="10" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="25" />
+          <entry key="JavaScript" value="26" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
@@ -116,10 +102,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="33" selection-start-line="33" selection-end-line="34" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="-2184">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -152,28 +147,28 @@
         <entry file="file://$PROJECT_DIR$/_app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+        <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="84">
+              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/router.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/enums.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="56">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -185,15 +180,6 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -283,8 +269,8 @@
         <option value="$PROJECT_DIR$/dev_server/main.js" />
         <option value="$PROJECT_DIR$/_app/components/modules/monitoring/detail.js" />
         <option value="$PROJECT_DIR$/_app/components/modules/monitoring/listView.js" />
-        <option value="$PROJECT_DIR$/_app/components/infrastructure/router.js" />
         <option value="$PROJECT_DIR$/_app/index.html" />
+        <option value="$PROJECT_DIR$/_app/components/infrastructure/router.js" />
       </list>
     </option>
   </component>
@@ -425,12 +411,12 @@
       <option name="presentableId" value="Default" />
       <updated>1539611290248</updated>
       <workItem from="1539611292033" duration="1236000" />
-      <workItem from="1539672947601" duration="31211000" />
+      <workItem from="1539672947601" duration="32030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32447000" />
+    <option name="totallyTimeSpent" value="33266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -564,20 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="33" selection-start-line="33" selection-end-line="34" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/enums.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-168" />
@@ -682,16 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/listView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -715,14 +677,38 @@
     <entry file="file://$PROJECT_DIR$/_app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="84">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/enums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="33" selection-start-line="33" selection-end-line="34" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2184">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
