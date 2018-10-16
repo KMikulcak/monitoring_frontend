@@ -7,7 +7,7 @@
             // npm install babel-preset-react --save-dev
             // npm install babel-loader --save-dev
         Note: If you also want to transpile certain new javascript features you can include "env" preset too. This allows to write classes and other features
-            // npm install babel-presets-env --save-dev
+            // npm install babel-preset-env --save-dev
         2.2- Webpackjs to bundle all components together
             //npm install webpack --save-dev
         2.3- React:
