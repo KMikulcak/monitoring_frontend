@@ -1,0 +1,27 @@
+{
+  "name": "monitoring_frontend",
+  "version": "1.0.0",
+  "description": "monitoring_frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KMikulcak/monitoring_frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KMikulcak/monitoring_frontend/issues"
+  },
+  "homepage": "https://github.com/KMikulcak/monitoring_frontend#readme",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "webpack": "^4.20.2"
+  }
+}
