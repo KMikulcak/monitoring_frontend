@@ -1,5 +1,7 @@
 monitoring_frontend
 
+![Screenshot](monitoring_frontend.png)
+
  1- Npm init (initialize project and give name,etc..)
  2- npm install dev dependedncies and regular dependencies
     If its a react project you would want:
