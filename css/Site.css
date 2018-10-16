@@ -171,7 +171,7 @@ body {
     white-space: nowrap;
     position: relative;
     border-bottom: 1px solid #e9e9e9;
-    background: url(../img/profile_mock.png) no-repeat no-repeat;
+    background: url(../../../img/profile_mock.png) no-repeat no-repeat;
     height: 135px;
 }
 

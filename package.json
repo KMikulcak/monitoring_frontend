@@ -4,8 +4,8 @@
   "description": "monitoring_frontend",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/webpack --watch",
-    "start": "node dev_server/main.js"
+    "build": "node_modules/.bin/webpack",
+    "start": "npm run build && node dev_server/main.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/KMikulcak/monitoring_frontend#readme",
   "dependencies": {
+    "chart.js": "^2.7.3",
     "react": "^16.5.2",
+    "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.5.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1"

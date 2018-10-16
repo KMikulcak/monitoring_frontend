@@ -4,7 +4,7 @@ import React from 'react';
 export class Row extends React.Component{
     constructor(props){
         super(props);
-        //this.renderOverviewChart = this.renderOverviewChart.bind(this);
+        //this.renderStateDiagram = this.renderStateDiagram.bind(this);
         this.state = {
 
 

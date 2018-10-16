@@ -9,12 +9,12 @@ if (!process.env.NODE_ENV) {
 const app = express();
 
 
-app.use(express.static(`modules/_app/`));
+app.use(express.static('_app'));
 
 
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname,'../modules/_app/index.html'));
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname,'../_app/index.html'));
 });
 
 

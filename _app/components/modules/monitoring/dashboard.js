@@ -1,15 +1,30 @@
 import React from 'react';
-import {RowHolder} from '../rowHolder';
+import {RowHolder} from '../../rowHolder';
 import {Line, Bar} from 'react-chartjs-2';
+
 
 export class Dashboard extends React.Component{
     constructor(props){
         super(props);
         //set up initial state for the component
         this.state = {
-            //anything you want
+            data: {
+                id:1,
+                stateList:[
+                    {"state":"Ordered","count":6},
+                    {"state":"Generated","count":5},
+                    {"state":"Enriched","count":4},
+                    {"state":"Injected","count":3},
+                    {"state":"OrderedError","count":1},
+                    {"state":"GeneratedError","count":1},
+                    {"state":"EnrichedError","count":1},
+                    {"state":"InjectedError","count":0}
+                ]}
+
         };
-    }
+        this.fetchData = this.fetchData.bind(this);
+        this.renderStateDiagram= this.renderStateDiagram.bind(this);
+     }
     renderContent(){
         return(
             <div>
@@ -17,114 +32,149 @@ export class Dashboard extends React.Component{
             </div>
         )
     }
+    fetchData(){
+        return new Promise((resolve, reject)=>{
+            const req = new XMLHttpRequest()
+            req.onload = ()=>{
+                if(req.status === 200){
+                    resolve(req.response);
+                }else{
+                    reject({
+                        code: req.status,
+                        text:req.statusText
+                    });
+                }
+            }
+            req.open('GET', 'Api endpoint',true);
+            //setup headers for the request
+            /*
+                req.setHeader()
+            */
+            req.send();
+        })
 
+
+    }
     componentDidMount(){
-        this.renderOverviewChart();
-        this.renderThroughputChart();
+        /*this.fetchData()
+            .then((data)=>{
+                this.setState(()=>({
+                    data
+                }));
+            })
+            .catch((error)=>{
+                //handle fetching error
+            });*/
     }
     componentDidUpdate(){
-        this.renderOverviewChart();
-        this.renderThroughputChart();
+        //might need to fetch data again
     }
-    renderOverviewChart(){
-        const chart =  new Chart(this.state._overviewChart.getContext("2d"), {
-            type: 'bar',
-            data: {
-                labels: ["Ordered", "Generated", "Enriched", "Injected", "Bank recieved", "Bank processed"],
-                datasets: [{
-                    label: "Status",
-                    data: [9, 4, 8, 15, 18, 9],
+
+    getStateDiagramData(data){
+
+        const nonErrors = [];
+        const errors = [];
+
+        data.stateList.forEach((stateDiagramPoint)=>{
+            const isError = stateDiagramPoint.state.includes('Error');
+            if(isError){
+                errors.push(stateDiagramPoint);
+            }else{
+                nonErrors.push(stateDiagramPoint);
+            }
+        });
+
+        return {
+            labels: nonErrors.map((stateDiagramPoint)=>stateDiagramPoint.state),
+            datasets: [{
+                label: "Status",
+                data: nonErrors.map((stateDiagramPoint)=>stateDiagramPoint.count),
+                backgroundColor: [
+                    'rgba(75, 192, 210, 0.2)',
+                    'rgba(75, 192, 210, 0.2)',
+                    'rgba(75, 192, 210, 0.2)',
+                    'rgba(75, 192, 210, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(75, 192, 192, 1)',
+                ],
+                borderWidth: 1,
+                stack: 'a'
+            },
+                {
+                    label: "Errors",
+                    data: errors.map((stateDiagramPoint)=>-stateDiagramPoint.count),
                     backgroundColor: [
-                        'rgba(75, 192, 210, 0.2)',
-                        'rgba(75, 192, 210, 0.2)',
-                        'rgba(75, 192, 210, 0.2)',
-                        'rgba(75, 192, 210, 0.2)',
-                        'rgba(75, 192, 210, 0.2)',
-                        'rgba(75, 192, 210, 0.2)',
+                        'rgba(255,99,132, 0.2)',
+                        'rgba(255,99,132, 0.2)',
+                        'rgba(255,99,132, 0.2)',
+                        'rgba(255,99,132, 0.2)',
                     ],
                     borderColor: [
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(75, 192, 192, 1)',
+                        'rgba(255,99,132,1)',
+                        'rgba(255,99,132,1)',
+                        'rgba(255,99,132,1)',
+                        'rgba(255,99,132,1)',
                     ],
                     borderWidth: 1,
-                    stack: 'a'
-                },
-                    {
-                        label: "Errors",
-                        data: [-3, -5, -2, -7, -4, -8],
-                        backgroundColor: [
-                            'rgba(255,99,132, 0.2)',
-                            'rgba(255,99,132, 0.2)',
-                            'rgba(255,99,132, 0.2)',
-                            'rgba(255,99,132, 0.2)',
-                            'rgba(255,99,132, 0.2)',
-                            'rgba(255,99,132, 0.2)',
-                        ],
-                        borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(255,99,132,1)',
-                            'rgba(255,99,132,1)',
-                            'rgba(255,99,132,1)',
-                            'rgba(255,99,132,1)',
-                            'rgba(255,99,132,1)',
-                        ],
-                        borderWidth: 1,
-                        stack: 'b'
-                    }
-                ]
-            },
-            options: {
-                onClick: function(c,i) {
+                    stack: 'b'
+                }
+            ]
+        };
+    }
 
-                    e = i[0];
-                    console.log(e._index)
-                    var x_value = this.data.labels[e._index];
-                    var y_value = this.data.datasets[0].data[e._index];
-                    console.log(x_value);
-                    console.log(y_value);
-
-                    location.href = "ListView.html";
-                },
-                legend: {
-                    display: true
-                },
-                tooltips: {
+    renderStateDiagram(){
+        if(!this.state.data){
+            return null;
+        }
+        const data = this.getStateDiagramData(this.state.data);
+        return(
+            <Bar
+                data={data}
+                options={{
+                    onClick: function(c,i) {
+                       var e = i[0];
+                        console.log(e._index)
+                        var x = this.data.labels[e._index];
+                        var y = this.data.datasets[0].data[e._index];
+                        window.location.href = `/monitoring/listView/${x}/${y}`;
+                    },
+                    legend: {   display: true
+                    },
+                    tooltips: {
                     callbacks: {
-                        label: function(tooltipItem) {
-                            return tooltipItem.yLabel;
-                        }
-                    }
+                    label: function(tooltipItem) {
+                    return tooltipItem.yLabel;
+                }
+                }
                 },
-                title: {
+                    title: {
                     display: false,
                     text: ''
                 },
-                scales: {
+                    scales: {
                     yAxes: [{
-                        stacked: true,
-                        ticks: {
-                            callback: function (value, index, values) {
-                                return value < 0 ? -value : value;
-                            }
-                        }
-                    }],
-                    xAxes: [{
-                        stacked: true,
-                        ticks: {
-                            beginAtZero:true,
-                            mirror: true
-                        }
-                    }]
+                    stacked: true,
+                    ticks: {
+                    callback: function (value, index, values) {
+                    return value < 0 ? -value : value;
                 }
-            }
-        });
-        this.setState(()=>({
-            overviewChart:chart
-        }));
+                }
+                }],
+                    xAxes: [{
+                    stacked: true,
+                    ticks: {
+                    beginAtZero:true,
+                    mirror: true
+                }
+                }]
+                }
+                }}
+            />
+        );
     }
 
     renderThroughputChart(){
@@ -348,7 +398,7 @@ export class Dashboard extends React.Component{
                     {
                         title: 'ThroughputDiagram',
                         subtitle: '',
-                        content: this.renderThroughputDiagram
+                        content: this.renderContent//this.renderThroughputDiagram
                     }
                 ]}
             />

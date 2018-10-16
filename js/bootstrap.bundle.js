@@ -5359,7 +5359,7 @@
         var html = this.config.html;
 
         if (typeof content === 'object' && (content.nodeType || content.jquery)) {
-          // Content is a DOM node or a jQuery
+          // RowHolder is a DOM node or a jQuery
           if (html) {
             if (!$$$1(content).parent().is($element)) {
               $element.empty().append(content);

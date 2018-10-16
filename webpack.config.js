@@ -1,12 +1,12 @@
 const path = require('path');
 
-const root = './modules';
+const root = './_app';
 
 
 const configuration = {
-    entry: './modules/_app/app.js',
+    entry: './_app/app.js',
     output: {
-        path: path.join(__dirname,root,'_app', 'out'),
+        path: path.join(__dirname,root, 'out'),
         filename: 'app.js'
     },
     module:{
