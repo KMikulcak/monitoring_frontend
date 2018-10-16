@@ -22,7 +22,7 @@ export class Content extends React.Component{
                     <div className="block-header">
                         <h2>DASHBOARD</h2>
                     </div>
-                    {/*<Row/>*/}
+                    <Row/>
                     {/*content*/}
                 </div>
             </section>
