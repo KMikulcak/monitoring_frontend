@@ -1,1 +1,22 @@
 monitoring_frontend
+
+![Screenshot](monitoring_frontend.png)
+
+ 1- Npm init (initialize project and give name,etc..)
+ 2- npm install dev dependedncies and regular dependencies
+    If its a react project you would want:
+        2.1- Babeljs for transpiling jsx code.
+            // npm install babel-core --save-dev
+            // npm install babel-cli --save-dev
+            // npm install babel-preset-react --save-dev
+            // npm install babel-loader --save-dev
+        Note: If you also want to transpile certain new javascript features you can include "env" preset too. This allows to write classes and other features
+            // npm install babel-preset-env --save-dev
+        2.2- Webpackjs to bundle all components together
+            //npm install webpack --save-dev
+        2.3- React:
+            // npm install react --save
+            // npm install react-dom --save
+        2.4 (Optional) Styles:
+            // npm install css-loader --save-dev
+            // npm install style-loader --save-dev
