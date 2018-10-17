@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a8b1f4e-0664-462e-b5d3-ccd86905c8e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_app/components/Left/leftSidebarHolder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Left/messageBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Left/navigationBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Left/userBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Right/messageBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Right/rightSidebarHolder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Top/moduleNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Top/moduleToolBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_app/components/Top/moduleToolNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Top/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_app/components/infrastructure/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/infrastructure/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/leftSidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/modules/monitoring/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/modules/monitoring/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/modules/monitoring/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/modules/monitoring/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/modules/monitoring/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/modules/monitoring/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/modules/monitoring/listView.html" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/modules/monitoring/listView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/modules/monitoring/listView.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/modules/monitoring/listView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/rightSidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/row.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/row.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_app/components/rowHolder.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/components/Content/rowHolder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_app/out/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/_app/out/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,7 +83,7 @@
           <entry key="css" value="9" />
           <entry key="html" value="252" />
           <entry key="ignore" value="17" />
-          <entry key="js" value="8247" />
+          <entry key="js" value="8491" />
           <entry key="json" value="164" />
           <entry key="txt" value="886" />
         </counts>
@@ -71,7 +93,7 @@
           <entry key="CSS" value="9" />
           <entry key="HTML" value="252" />
           <entry key="JSON" value="281" />
-          <entry key="JavaScript" value="8247" />
+          <entry key="JavaScript" value="8491" />
           <entry key="PLAIN_TEXT" value="903" />
         </counts>
       </usages-collector>
@@ -81,10 +103,10 @@
           <entry key="css" value="4" />
           <entry key="html" value="10" />
           <entry key="ignore" value="1" />
-          <entry key="js" value="26" />
+          <entry key="js" value="37" />
           <entry key="json" value="6" />
           <entry key="md" value="1" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -92,29 +114,59 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="10" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="26" />
+          <entry key="JavaScript" value="37" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_app/components/Top/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="33" selection-start-line="33" selection-end-line="34" selection-end-column="108" />
+            <state relative-caret-position="333">
+              <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="35" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_app/components/Top/moduleToolNavigation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2184">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="70">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_app/components/Top/moduleToolBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_app/components/Top/moduleNavigation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_app/components/Left/leftSidebarHolder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -125,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="280">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -135,28 +187,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_server/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_app/index.html">
+        <entry file="file://$PROJECT_DIR$/_app/components/Left/navigationBox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/router.js">
+        <entry file="file://$PROJECT_DIR$/_app/components/Right/rightSidebarHolder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="266">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -165,45 +208,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_app/components/infrastructure/enums.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_app/out/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-546">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/listView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/detail.js">
+        <entry file="file://$PROJECT_DIR$/_app/components/Right/messageBox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+              <caret line="12" column="16" lean-forward="true" selection-end-line="12" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_app/components/Left/messageBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="12" column="16" lean-forward="true" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -230,10 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/dashboard.html" />
         <option value="$PROJECT_DIR$/git.ignore" />
         <option value="$PROJECT_DIR$/modules/mdlt/index.html" />
         <option value="$PROJECT_DIR$/howtosetup.txt" />
@@ -271,6 +284,20 @@
         <option value="$PROJECT_DIR$/_app/components/modules/monitoring/listView.js" />
         <option value="$PROJECT_DIR$/_app/index.html" />
         <option value="$PROJECT_DIR$/_app/components/infrastructure/router.js" />
+        <option value="$PROJECT_DIR$/_app/components/messageBox.js" />
+        <option value="$PROJECT_DIR$/_app/components/leftSidebar.js" />
+        <option value="$PROJECT_DIR$/_app/components/userBox.js" />
+        <option value="$PROJECT_DIR$/_app/components/header.js" />
+        <option value="$PROJECT_DIR$/_app/components/Left/messageBox.js" />
+        <option value="$PROJECT_DIR$/_app/components/Left/navigationBox.js" />
+        <option value="$PROJECT_DIR$/_app/components/Left/leftSidebarHolder.js" />
+        <option value="$PROJECT_DIR$/_app/components/Right/messageBox.js" />
+        <option value="$PROJECT_DIR$/_app/components/Right/rightSidebar.js" />
+        <option value="$PROJECT_DIR$/_app/components/Right/rightSidebarHolder.js" />
+        <option value="$PROJECT_DIR$/_app/components/Top/moduleNavigation.js" />
+        <option value="$PROJECT_DIR$/_app/components/Top/moduleToolNavigation.js" />
+        <option value="$PROJECT_DIR$/_app/components/Top/moduleToolBar.js" />
+        <option value="$PROJECT_DIR$/_app/components/Top/header.js" />
       </list>
     </option>
   </component>
@@ -326,22 +353,21 @@
               <item name="monitoring_frontend" type="462c0819:PsiDirectoryNode" />
               <item name="_app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="infrastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="Left" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monitoring_frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="monitoring_frontend" type="462c0819:PsiDirectoryNode" />
               <item name="_app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Right" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monitoring_frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="monitoring_frontend" type="462c0819:PsiDirectoryNode" />
               <item name="_app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="monitoring" type="462c0819:PsiDirectoryNode" />
+              <item name="Top" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="monitoring_frontend" type="b2602c69:ProjectViewProjectNode" />
@@ -381,11 +407,11 @@
       <recent name="C:\projects_JAVA\monitoring_frontend\modules\ptot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects_JAVA\monitoring_frontend\_app\components\Content" />
+      <recent name="C:\projects_JAVA\monitoring_frontend\_app\components\Right" />
+      <recent name="C:\projects_JAVA\monitoring_frontend\_app\components\Top" />
+      <recent name="C:\projects_JAVA\monitoring_frontend\_app\components\Left" />
       <recent name="C:\projects_JAVA\monitoring_frontend" />
-      <recent name="C:\projects_JAVA\monitoring_frontend\modules\_app\components\modules" />
-      <recent name="C:\projects_JAVA\monitoring_frontend\modules\_app\components\infrastructure" />
-      <recent name="C:\projects_JAVA\monitoring_frontend\modules\_app\components\monitoring" />
-      <recent name="C:\projects_JAVA\monitoring_frontend\modules\_site" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -411,12 +437,12 @@
       <option name="presentableId" value="Default" />
       <updated>1539611290248</updated>
       <workItem from="1539611292033" duration="1236000" />
-      <workItem from="1539672947601" duration="32030000" />
+      <workItem from="1539672947601" duration="35911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33266000" />
+    <option name="totallyTimeSpent" value="37147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -491,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/howtosetup.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/monitoring/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -509,30 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/rightSidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="29" column="113" selection-start-line="29" selection-start-column="113" selection-end-line="29" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/leftSidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -550,7 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/detail.html">
+    <entry file="file://$PROJECT_DIR$/_app/components/Content/modules/monitoring/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-168" />
       </provider>
@@ -579,7 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/rowHolder.js">
+    <entry file="file://$PROJECT_DIR$/_app/components/Content/rowHolder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
@@ -589,7 +584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/row.js">
+    <entry file="file://$PROJECT_DIR$/_app/components/Content/row.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
@@ -628,16 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_app/out/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-546">
@@ -654,7 +639,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/listView.js">
+    <entry file="file://$PROJECT_DIR$/_app/components/Content/modules/monitoring/listView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
@@ -664,7 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/detail.js">
+    <entry file="file://$PROJECT_DIR$/_app/components/Content/modules/monitoring/detail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
@@ -698,17 +683,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/_app/components/Content/modules/monitoring/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="33" selection-start-line="33" selection-end-line="34" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_app/components/modules/monitoring/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/_app/components/Content/modules/monitoring/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2184">
           <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/howtosetup.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Left/userBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Left/leftSidebarHolder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Left/navigationBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Left/messageBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="16" lean-forward="true" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Right/rightSidebarHolder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Right/messageBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="16" lean-forward="true" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Top/moduleNavigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Top/moduleToolNavigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Top/moduleToolBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_app/components/Top/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

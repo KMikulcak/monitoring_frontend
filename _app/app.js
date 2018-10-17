@@ -1,7 +1,7 @@
 import React from "react";
-import {Header} from "./components/header";
-import {RightSidebar} from "./components/rightSidebar";
-import {LeftSidebar} from "./components/leftSidebar";
+import {Header} from "./components/Top/header";
+import {RightSidebarHolder} from "./components/Right/rightSidebarHolder";
+import {LeftSidebarHolder} from "./components/Left/leftSidebarHolder";
 import ReactDOM from "react-dom";
 import {AppRouter} from "./components/infrastructure/router";
 import '../js/all.js';
@@ -22,8 +22,8 @@ class App extends React.Component {
         return (
             <React.Fragment>
                 <Header/>
-                <RightSidebar/>
-                <LeftSidebar/>
+                <RightSidebarHolder/>
+                <LeftSidebarHolder/>
                 <AppRouter/>
             </React.Fragment>
         );
