@@ -1,34 +1,13 @@
 import React from 'react';
 import {RowHolder} from '../../rowHolder';
+import {connect} from 'react-redux';
 import {Line, Bar} from 'react-chartjs-2';
-import {LoadingComponent} from '../../../infrastructure/loadingComponent'
+import {fetchStateDiagram} from '../../../../store/actions/monitoringData';
 
-export class Dashboard extends LoadingComponent{
+class _Dashboard extends React.Component{
     constructor(props){
         super(props);
-        //set up initial state for the component
-        this.state = {
-            data: {
-                id:1,
-                stateList:[
-                    {"state":"Ordered","count":6},
-                    {"state":"Generated","count":5},
-                    {"state":"Enriched","count":4},
-                    {"state":"Injected","count":3},
-                    {"state":"OrderedError","count":1},
-                    {"state":"GeneratedError","count":1},
-                    {"state":"EnrichedError","count":1},
-                    {"state":"InjectedError","count":0}
-            ]},
-            loading: true
-
-        };
-        this.fetchData = this.fetchData.bind(this);
         this.renderStateDiagram= this.renderStateDiagram.bind(this);
-    }
-
-    isLoading(){
-        return this.state.loading;
     }
 
     renderContent(){
@@ -38,47 +17,15 @@ export class Dashboard extends LoadingComponent{
             </div>
         )
     }
-
-    fetchData(){
-        return new Promise((resolve, reject)=>{
-            const req = new XMLHttpRequest()
-            req.onload = ()=>{
-                if(req.status === 200){
-                    resolve(req.response);
-                }else{
-                    reject({
-                        code: req.status,
-                        text:req.statusText
-                    });
-                }
-            }
-            req.open('GET', 'Api endpoint',true);
-            //setup headers for the request
-            /*
-                req.setHeader()
-            */
-            req.send();
-        })
-
-
-    }
     componentDidMount(){
-        /*this.fetchData()
-            .then((data)=>{
-                this.setState(()=>({
-                    data,
-                    loading: false
-                }));
-            })
-            .catch((error)=>{
-                //handle fetching error
-            });*/
-    }
-    componentDidUpdate(){
-        //might need to fetch data again
+        console.log('dispatching action from component');
+        this.props.dispatch(fetchStateDiagram());
+        //dispatch action to fech stateDiagram
     }
 
     getStateDiagramData(data){
+        if(!data){return undefined;}
+
         const nonErrors = [];
         const errors = [];
 
@@ -133,8 +80,19 @@ export class Dashboard extends LoadingComponent{
         };
     }
 
+    renderLoadingSpinner(){
+        return(
+            <div className="spinner dashboard">
+               Loading!
+            </div>
+        )
+    }
+
     renderStateDiagram(){
-        const data = this.getStateDiagramData(this.state.data);
+        const data = this.getStateDiagramData(this.props.stateDiagram);
+
+        if(!data){return this.renderLoadingSpinner();}
+
         return(
             <Bar
                 data={data}
@@ -408,4 +366,13 @@ export class Dashboard extends LoadingComponent{
         );
     }
 };
+
+const mapStateToProps = (state,props)=>{
+    return{
+        stateDiagram: state.monitoringData.stateDiagram
+    }
+}
+
+
+export const Dashboard = connect(mapStateToProps, undefined)(_Dashboard);
 

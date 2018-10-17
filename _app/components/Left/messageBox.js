@@ -63,13 +63,34 @@ export class MessageBox extends React.Component {
                     "link": "https://www.spf-consulting.ch/",
                     "linkTitle": "Link1"
                 },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
             ]
         };
     }
 
     render() {
         return (
-            <div>
+            <div className="message-box-wrapper">
                 <div className="sidebar-header">
                     <h3>Status Messages</h3>
                 </div>

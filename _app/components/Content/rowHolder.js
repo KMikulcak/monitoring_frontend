@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row} from './row';
+import {Rows} from './row';
 
 
 
@@ -22,16 +22,7 @@ export class RowHolder extends React.Component{
                     <div className="block-header">
                         <h2>{this.props.title}</h2>
                     </div>
-                    {this.props.rows.map((row, index)=>{
-                            return(
-                                <Row
-                                    key={`row_${index}`}
-                                    title={row.title}
-                                    subtitle={row.subtitle}
-                                    content={row.content}
-                                />
-                            )
-                    })}
+                    <Rows rows={this.props.rows} />
                 </div>
             </section>
         )

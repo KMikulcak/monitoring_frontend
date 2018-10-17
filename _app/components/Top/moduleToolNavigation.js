@@ -1,17 +1,20 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {toggleRightSideBar} from "../../store/actions/uiState";
 
 
-
-
-export class ModuleToolNavigation extends React.Component {
+class _ModuleToolNavigation extends React.Component {
     constructor(props) {
         super(props);
+        this.toggleRightSideBar = this.toggleRightSideBar.bind(this);
     }
-
+    toggleRightSideBar(){
+        this.props.dispatch(toggleRightSideBar());
+    }
     render() {
         return (
             <ul className="nav navbar-nav navbar-right header-navi">
-                <li><a href="#"><i
+                <li><a onClick={this.toggleRightSideBar} href="#"><i
                     className="fas fa-info-circle header-navi-icons"></i><span
                     className="badge badge-primary">22</span></a></li>
                 <li><a href="#"><i
@@ -20,3 +23,8 @@ export class ModuleToolNavigation extends React.Component {
         )
     }
 }
+
+
+
+
+export const ModuleToolNavigation = connect(undefined,undefined)(_ModuleToolNavigation);

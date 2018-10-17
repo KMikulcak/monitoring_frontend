@@ -1,21 +1,32 @@
 import React from 'react';
 import {MessageBox} from "./messageBox";
+import {connect} from "react-redux";
 
 
-
-
-export class RightSidebarHolder extends React.Component{
+class _RightSidebarHolder extends React.Component{
     constructor(props){
         super(props);
     }
 
     render(){
-        return(
-            <section>
-                <aside className="right_sidebar" id="messagesFrame" style={{"display": "none"}}>
-                    <MessageBox/>
-                </aside>
-            </section>
-        )
+        if(this.props.shouldRender){
+            return(
+                <section>
+                    <aside className="right_sidebar" id="messagesFrame">
+                        <MessageBox/>
+                    </aside>
+                </section>
+            )
+        }else{
+            return null;
+        }
     }
 }
+
+const mapStateToProps = (state,props)=>{
+    return{
+        shouldRender: state.uiState.isRightSideBarRendering
+    };
+}
+
+export const RightSidebarHolder = connect(mapStateToProps,undefined)(_RightSidebarHolder);

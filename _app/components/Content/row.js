@@ -30,3 +30,16 @@ export class Row extends React.Component{
        );
     }
 }
+
+export const Rows = ({rows}) => (
+    <div>
+        {rows.map((item, index)=> (
+            <Row
+                key={`row_${index}`}
+                title={item.title}
+                subtitle={item.subtitle}
+                content={item.content}
+            />
+        ))}
+    </div>
+);

@@ -1,7 +1,7 @@
 import React from 'react';
 import {withHistoryContext} from "../../app";
 import {getModule} from "../infrastructure/moduleHelper";
-import {ModuleNavigationLink} from "./ModuleNavigationLink";
+import {ModuleNavigationLink} from "./moduleNavigationLink";
 
 
 export class ModuleNavigation extends React.Component {

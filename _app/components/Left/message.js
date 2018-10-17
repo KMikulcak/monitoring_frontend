@@ -4,22 +4,23 @@ import React from 'react';
 
 
 export class Message extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state = {
-        }
+        this.state = {}
     }
 
     render() {
         return (
             <div className="message-box-row">
                 <b>{this.props.date} - {this.props.title}</b>
-                <p>{this.props.text}</p>
-                {this.props.link ?
-                    <a href={this.props.link}>{this.props.linkTitle}</a>
-                    :
-                    null
-                }
+                <div>
+                    <p>{this.props.text}</p>
+                    {this.props.link ?
+                        <a href={this.props.link}>{this.props.linkTitle}</a>
+                        :
+                        null
+                    }
+                </div>
             </div>
         )
     }

@@ -224,9 +224,16 @@ body {
     background:rgba(226,0,26,0.5);;
 }
 
+.message-box-wrapper{
+    width: 100%;
+    bottom: 15px!important;
+}
+
 .message-box{
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 .sidebar-header{
@@ -252,11 +259,16 @@ body {
 }
 
 .message-box-row{
-    padding: 5px;
+    padding: 2px;
     margin: 0 10px 0 10px;
     border-bottom:1px dotted  #dedfe2;
     color: #000;
     font-size: 12px;
+}
+
+.message-box-row p{
+    padding: 3px;
+    margin: 0;
 }
 
 .row-dark{
@@ -264,12 +276,19 @@ body {
 }
 
 .message-box-row b{
-    color: #F44336 !important;
-    font-size: 12px!important;
-    display: block;
+       padding: 3px;
+       color: #F44336 !important;
+       font-size: 12px!important;
+       display: block;
+       cursor: pointer;
+   }
+
+.message-box-row b:hover{
+    background-color: #eeeeee;
 }
 
 .message-box-row a {
+    padding: 3px;
     font-style: italic;
     color: #c7254e;
     background-color: #f9f2f4;
@@ -405,4 +424,25 @@ body {
 
 #mc {
     background: #f9f9f9 url(http://fancygrid.com/img/bg_body.gif) 0 0 repeat;
+}
+
+.left_sidebar-footer{
+    font-size: 10px;
+    color:#333;
+    width: 100%;
+    bottom:0;
+    height:15px;
+    vertical-align: center;
+    horiz-align: center;
+}
+
+.left_sidebar-footer p{
+    text-align: center;
+    width: 100%;
+}
+
+.left_sidebar-footer a {
+    font-style: italic;
+    color: #c7254e;
+    background-color: #f9f2f4;
 }
