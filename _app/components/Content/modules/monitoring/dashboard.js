@@ -1,9 +1,9 @@
 import React from 'react';
 import {RowHolder} from '../../rowHolder';
 import {Line, Bar} from 'react-chartjs-2';
+import {LoadingComponent} from '../../../infrastructure/loadingComponent'
 
-
-export class Dashboard extends React.Component{
+export class Dashboard extends LoadingComponent{
     constructor(props){
         super(props);
         //set up initial state for the component
@@ -19,12 +19,18 @@ export class Dashboard extends React.Component{
                     {"state":"GeneratedError","count":1},
                     {"state":"EnrichedError","count":1},
                     {"state":"InjectedError","count":0}
-                ]}
+            ]},
+            loading: true
 
         };
         this.fetchData = this.fetchData.bind(this);
         this.renderStateDiagram= this.renderStateDiagram.bind(this);
-     }
+    }
+
+    isLoading(){
+        return this.state.loading;
+    }
+
     renderContent(){
         return(
             <div>
@@ -32,6 +38,7 @@ export class Dashboard extends React.Component{
             </div>
         )
     }
+
     fetchData(){
         return new Promise((resolve, reject)=>{
             const req = new XMLHttpRequest()
@@ -59,7 +66,8 @@ export class Dashboard extends React.Component{
         /*this.fetchData()
             .then((data)=>{
                 this.setState(()=>({
-                    data
+                    data,
+                    loading: false
                 }));
             })
             .catch((error)=>{
@@ -71,7 +79,6 @@ export class Dashboard extends React.Component{
     }
 
     getStateDiagramData(data){
-
         const nonErrors = [];
         const errors = [];
 
@@ -127,9 +134,6 @@ export class Dashboard extends React.Component{
     }
 
     renderStateDiagram(){
-        if(!this.state.data){
-            return null;
-        }
         const data = this.getStateDiagramData(this.state.data);
         return(
             <Bar
@@ -402,7 +406,7 @@ export class Dashboard extends React.Component{
                     }
                 ]}
             />
-        )
+        );
     }
 };
 

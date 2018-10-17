@@ -19,6 +19,7 @@
   "homepage": "https://github.com/KMikulcak/monitoring_frontend#readme",
   "dependencies": {
     "chart.js": "^2.7.3",
+    "history": "^4.7.2",
     "react": "^16.5.2",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.5.2",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",

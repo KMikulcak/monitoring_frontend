@@ -12,6 +12,21 @@ body {
     font-family: 'Roboto', Arial, Tahoma, sans-serif;
 }
 
+.loader {
+    border: 16px solid #e2001a;
+    border-right-color: #f07f8c;
+    border-left-color: #f07f8c;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .header-navi-icons{
     font-size: 20px;
     color: white;
@@ -28,11 +43,35 @@ body {
     box-shadow:         3px 3px 5px #ccc;
 }
 
-.header-title{
+.navbar-header{
+    font-size: 20px!important;
     color: white;
-    font-size: 30px;
+}
+
+.header-title{
+    color: white !important;
+    font-size: 20px!important;
     padding: 0;
     margin: 10px;
+    text-decoration: none;
+}
+
+.header-title a:hover{
+    color: white!important;
+    text-decoration: none;
+}
+
+.header-title-selected {
+     color: white!important;
+     font-size: 30px!important;
+     padding: 0;
+     margin: 10px;
+     text-decoration: none;
+ }
+
+.header-title-selected a:hover {
+    color: white!important;
+    text-decoration: none;
 }
 
 .header-navi{

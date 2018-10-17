@@ -6,7 +6,7 @@ import {Detail} from "../Content/modules/monitoring/detail";
 
 export const AppRouter = (props) => {
     return (
-        <BrowserRouter>
+        <Router history={props.history}>
             <Switch>
                 <Route
                     path='/monitoring'
@@ -34,6 +34,6 @@ export const AppRouter = (props) => {
                     render={() => <div>ptopt</div>}
                 />
             </Switch>
-        </BrowserRouter>
+        </Router>
     );
 }
