@@ -141,7 +141,6 @@ export class Dashboard extends LoadingComponent{
                 options={{
                     onClick: function(c,i) {
                        var e = i[0];
-                        console.log(e._index)
                         var x = this.data.labels[e._index];
                         var y = this.data.datasets[0].data[e._index];
                         window.location.href = `/monitoring/listView/${x}/${y}`;

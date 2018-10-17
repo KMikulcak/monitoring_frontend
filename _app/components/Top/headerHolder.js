@@ -1,12 +1,12 @@
 import React from 'react';
-import {module} from "../infrastructure/enums";
+import {module} from "../infrastructure/moduleHelper";
 import {ModuleNavigation} from "./moduleNavigation";
 import {ModuleToolNavigation} from "./moduleToolNavigation";
 import {ModuleToolBar} from "./moduleToolBar";
 
 
 
-export class Header extends React.Component {
+export class HeaderHolder extends React.Component {
     constructor(props) {
         super(props);
         //this.renderHeader = this.renderHeader.bind(this);
@@ -43,4 +43,4 @@ export class Header extends React.Component {
     }
 }
 
-export default Header;
+export default HeaderHolder;

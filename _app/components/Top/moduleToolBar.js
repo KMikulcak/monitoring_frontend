@@ -11,7 +11,7 @@ export class ModuleToolBar extends React.Component {
 
     render() {
         return (
-            <div className="container-fluid filterbar" id="filterBar" style={{"display": "none"}}>
+            <div className="container-fluid filterbar">
                 Filter Options:
                 <div className="btn-group">
                     <button type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown">

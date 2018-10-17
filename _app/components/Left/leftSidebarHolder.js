@@ -23,6 +23,8 @@ export class LeftSidebarHolder extends React.Component {
 
                     <MessageBox/>
 
+                    <div>developed by <a href="https://www.spf-consulting.ch/" title="SPF Consulting">SPF Consulting</a> {(new Date().getFullYear())}</div>
+
                 </aside>
             </section>
         )

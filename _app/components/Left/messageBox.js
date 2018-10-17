@@ -1,12 +1,70 @@
 import React from 'react';
-
-
+import {Message, Messages} from "./message";
 
 
 export class MessageBox extends React.Component {
     constructor(props) {
         super(props);
-
+        this.state = {
+            data: [
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+                {
+                    "date": "01.01.2018",
+                    "title": "Message1",
+                    "text": "lorem ipsum fatalis",
+                    "link": "https://www.spf-consulting.ch/",
+                    "linkTitle": "Link1"
+                },
+            ]
+        };
     }
 
     render() {
@@ -17,52 +75,10 @@ export class MessageBox extends React.Component {
                 </div>
 
                 <div className="message-box">
-                    <div className="message-box-row">
-                        <b>14:55:00 - New PTOT Release!</b> Version 9.27 is live now. Check out the <a
-                        href="#">releasnotes</a>
-                    </div>
-                    <div className="message-box-row row-dark">
-                        <b>13:30:00 - PTOT Manual</b> learn <a href="#">here</a>, how to generate E2E orders!
-                    </div>
-                    <div className="message-box-row">
-                        <b>13:00:00 - MDLT at BrainMeUp</b> If you want to learn more about MDLT, meet us on 8th of
-                        October at the <a href="#">BrainMeUp</a> event.
-                    </div>
-                    <div className="message-box-row row-dark">
-                        <b>14:55:00 - New PTOT Release!</b> Version 9.27 is live now. Check out the <a
-                        href="#">releasnotes</a>
-                    </div>
-                    <div className="message-box-row">
-                        <b>13:30:00 - PTOT Manual</b> learn <a href="#">here</a>, how to generate E2E orders!
-                    </div>
-                    <div className="message-box-row row-dark">
-                        <b>13:00:00 - MDLT at BrainMeUp</b> If you want to learn more about MDLT, meet us on 8th of
-                        October at the <a href="#">BrainMeUp</a> event.
-                    </div>
-                    <div className="message-box-row">
-                        <b>14:55:00 - New PTOT Release!</b> Version 9.27 is live now. Check out the <a
-                        href="#">releasnotes</a>
-                    </div>
-                    <div className="message-box-row row-dark">
-                        <b>13:30:00 - PTOT Manual</b> learn <a href="#">here</a>, how to generate E2E orders!
-                    </div>
-                    <div className="message-box-row">
-                        <b>13:00:00 - MDLT at BrainMeUp</b> If you want to learn more about MDLT, meet us on 8th of
-                        October at the <a href="#">BrainMeUp</a> event.
-                    </div>
-                    <div className="message-box-row row-dark">
-                        <b>14:55:00 - New PTOT Release!</b> Version 9.27 is live now. Check out the <a
-                        href="#">releasnotes</a>
-                    </div>
-                    <div className="message-box-row">
-                        <b>13:30:00 - PTOT Manual</b> learn <a href="#">here</a>, how to generate E2E orders!
-                    </div>
-                    <div className="message-box-row row-dark">
-                        <b>13:00:00 - MDLT at BrainMeUp</b> If you want to learn more about MDLT, meet us on 8th of
-                        October at the <a href="#">BrainMeUp</a> event.
-                    </div>
+                    <Messages messages={this.state.data} />
                 </div>
             </div>
         )
     }
 }
+

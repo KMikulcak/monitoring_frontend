@@ -6,7 +6,6 @@ import React from 'react';
 export class ModuleToolNavigation extends React.Component {
     constructor(props) {
         super(props);
-
     }
 
     render() {
