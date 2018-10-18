@@ -6,3 +6,9 @@ export const toggleRightSideBar = ()=>{
         type: 'TOGGLE_RIGHTSIDEBAR'
     }
 }
+
+export const toggleFilterBar = ()=>{
+    return{
+        type: 'TOGGLE_FILTERBAR'
+    }
+}

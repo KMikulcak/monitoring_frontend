@@ -1,10 +1,11 @@
 
 import {networkError} from "./errors";
 
-export const fetchStateDiagram = ()=>{
-    return(dispatch, getState)=>{
+export const fetchStateDiagram = ()=> {
+    return (dispatch, getState) => {
 
-        return new Promise((resolve, reject)=> {
+        return new Promise((resolve, reject) => {
+
             const req = new XMLHttpRequest();
             req.onload = () => {
                 if (req.status === 200) {
@@ -13,7 +14,8 @@ export const fetchStateDiagram = ()=>{
                         stateDiagram: JSON.parse(req.response)
                     });
                 } else {
-                    dispatch(networkError('ERROR_FETCHING_STATE_DIAGRAM',req.status, req.message));
+                    //dispatch(networkError('ERROR_FETCHING_STATE_DIAGRAM', req.status, req.message));
+                    dispatch('ERROR_FETCHING_STATE_DIAGRAM', undefined);
                 }
             }
             req.open('GET', "localhost:8000/stateDiagram/Filter", true);

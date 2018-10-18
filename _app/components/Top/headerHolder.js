@@ -1,8 +1,8 @@
 import React from 'react';
 import {module} from "../infrastructure/moduleHelper";
-import {ModuleNavigation} from "./moduleNavigation";
-import {ModuleToolNavigation} from "./moduleToolNavigation";
-import {ModuleToolBar} from "./moduleToolBar";
+import {NavigationBar} from "./navigationBar";
+import {ToolBar} from "./toolBar";
+import {FilterBar} from "./filterBar";
 
 
 
@@ -30,13 +30,13 @@ export class HeaderHolder extends React.Component {
             <nav className="navbar navbar-fixed-top spf_color">
                 <div className="container-fluid header">
 
-                    <ModuleNavigation/>
+                    <NavigationBar/>
 
-                    <ModuleToolNavigation/>
+                    <ToolBar/>
 
                 </div>
 
-                <ModuleToolBar/>
+                <FilterBar/>
 
             </nav>
         )

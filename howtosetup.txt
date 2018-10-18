@@ -16,3 +16,7 @@
         2.4 (Optional) Styles:
             // npm install css-loader --save-dev
             // npm install style-loader --save-dev
+3- npm install fail behind company proxy
+// npm set strict-ssl false
+// npm config set https-proxy http://"userName:pw"@proxy:port
+// npm config set proxy http://"userName:pw"@proxy:port

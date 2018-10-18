@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch, Router} from 'react-router-dom';
-import {Dashboard} from "../Content/modules/monitoring/dashboard";
-import {ListView} from "../Content/modules/monitoring/listView";
-import {Detail} from "../Content/modules/monitoring/detail";
+import {Dashboard} from "../Content/modules/monitoring/dashboard/dashboard";
+import {ListView} from "../Content/modules/monitoring/listView/listView";
+import {Detail} from "../Content/modules/monitoring/detail/detail";
 
 export const AppRouter = (props) => {
     return (

@@ -1,7 +1,8 @@
 
 
 const defaultState = {
-    isRightSideBarRendering: false
+    isRightSideBarRendering: false,
+    isFilterBarRendering: false
 }
 
 
@@ -11,6 +12,11 @@ export const uiStateReducer = (state = defaultState, action)=>{
             return{
                 ...state,
                 isRightSideBarRendering: !state.isRightSideBarRendering
+            }
+        case 'TOGGLE_FILTERBAR':
+            return{
+                ...state,
+                isFilterBarRendering: !state.isFilterBarRendering
             }
         default:
             return state;
